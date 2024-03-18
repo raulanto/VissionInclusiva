@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <section class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img src="src/img/Logo.svg" class="mr-3 h-6 sm:h-9" alt="VisiónInclusiva Logo" />
+                    <span
+                        class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">VisiónInclusiva</span>
+                </a>
+                <article class="flex items-center lg:order-2">
+                    <!-- <a href="#"
+                        class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log
+                        in</a>
+                    <a href="#"
+                        class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Get
+                        started</a> -->
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Abrir Menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </article>
+                <section class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+                    id="mobile-menu-2">
+                    <ul class="flex flex-col w-full mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="./index.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./Blog.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                        </li>
+
+
+                        <!-- <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li> -->
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </header>
+
+    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+        <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+            <article
+                class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <header class="mb-4 lg:mb-6 not-format">
+                    <address class="flex items-center mb-6 not-italic">
+                        <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                            <img class="mr-4 w-16 h-16 rounded-full"
+                                src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos" />
+                            <div>
+                                <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">Juan Carlos Pérez Arias
+                                </a>
+                                <p class="text-base text-gray-500 dark:text-gray-400">
+                                    Ing. en Sistemas computacional
+                                </p>
+                                <p class="text-base text-gray-500 dark:text-gray-400">
+                                    <time pubdate datetime="2024-01-18" title="Lunes 18 , 2024">Lunes 18 , 2024</time>
+                                </p>
+                            </div>
+                        </div>
+                    </address>
+                    <h1
+                        class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+                        Lectores de pantalla
+                    </h1>
+                </header>
+                <p class="lead">
+                    La vida de los seres humanos ha evolucionado con el paso del tiempo,
+                    lo que le ha permitido al hombre indagar en nuevos aspectos del
+                    conocimiento y construir el mundo que nos rodea, permitiendo mejorar
+                    la calidad de vida de las personas, en consecuencia, la vida es más
+                    larga y duradera.
+                </p>
+                <p>
+                    El proceso de evolución del ser humano ha estado acompañado de
+                    procesos tecnológicos que impactan directamente su vida,
+                    facilitándola y permitiendo que se vuelva mucho más llevadera. En el
+                    mundo actual el uso de las tecnologías se ha vuelto no solo
+                    indispensable sino una necesidad fundamental para el desarrollo
+                    académico, laboral, económico, social y familiar. Pues las
+                    tecnologías nos permiten no solo estar en constante comunicación
+                    sino poder aprender múltiples cosas en menor tiempo, ya que a tan
+                    solo un click de distancia es posible acceder a un mundo de
+                    información tan variada, cosa que no era tan fácil hace unas décadas
+                    atrás.
+                </p>
+                <p>
+                    Partiendo de lo antes mencionado es que se abordará este tema, pues
+                    la tecnología ha impactado tanto que está incluso al alcance de
+                    personas que tal vez no tienen las mismas condiciones que la gran
+                    mayoría de personas en una sociedad, para ser más específico las
+                    personas con discapacidad visual. El hecho de poder acceder a la
+                    tecnología y manipularla de forma que facilite su vida es algo que
+                    no muchas personas conocen, sin embargo, hoy en día las grandes
+                    empresas buscan integran a todas las personas en el mundo
+                    tecnológico sin importar discapacidad, rasa, género, religión, etc.
+                    Es aquí donde toma importancia la parte de la inclusión puesto que
+                    debido a esos cambios positivos, es posible romper la barrera de la
+                    limitante e indagar en un nuevo mundo.
+                </p>
+                <figure class="rounded-md overflow-hidden">
+                    <img src="src/img/evolucion-kubernetica.webp" alt="El hombre y la tecnología" />
+                    <figcaption>El hombre y la tecnología</figcaption>
+                </figure>
+                <h2>
+                    Ahora bien, la pregunta es ¿Comó puede una persona con discapacidad
+                    visual acceder a la tecnología?
+                </h2>
+                <p>
+                    Para responder la pregunta es que existen distintas herramientas
+                    tecnológicas que permiten dicho acceso, estas se les llaman
+                    “Lectores de pantalla” y son narradores en tiempo real de todo
+                    aquello que un usuario tiene en la pantalla, es decir, a medida que
+                    el usuario se desplaza por las distintas opciones de uno de sus
+                    dispositivos los lectores de pantalla irán leyendo en voz alta lo
+                    que se está enfocando en la pantalla en ese momento. Esto aplica
+                    tanto para dispositivos móviles, laptops, computadoras de
+                    escritorio, tabletas, relojes inteligentes, televisiones, entre
+                    otros dispositivos.
+                </p>
+                <p>
+                    También existen distintas lupas para el caso de las personas que
+                    tienen una debilidad visual pero todavía tienen la capacidad de
+                    distinguir elementos a su alrededor, aunque a una distancia muy
+                    cercana. Estas lupas permiten hacer zoom en la pantalla para
+                    agrandar más un elemento en específico y poder verlo correctamente.
+                </p>
+                <p>
+                    Continuando con los lectores de pantalla, se han vuelto muy
+                    importante en la vida de las personas con discapacidad visual puesto
+                    que les han permitido tener un acceso al aprendizaje mucho más
+                    acercado a la realidad que todos viven, además también se han vuelto
+                    una herramienta fundamental para el desarrollo laboral, pues
+                    permiten realizar las mismas actividades que las demás personas
+                    realizan, lo que les permite integrarse a la sociedad con menos
+                    limitantes de las que ya de forma implícita por tener una
+                    discapacidad tienen.
+                </p>
+                <p>
+                    El sistema operativo Windows contiene entre sus opciones una que
+                    involucra la accesibilidad, como la lupa o el mismo narrador. Dicho
+                    narrador es un lector de pantalla que ayuda a que los usuarios
+                    puedan manejar sus equipos a pesar de tener una discapacidad visual,
+                    el problema es que esta tecnología no tiene un alcance muy grande n
+                    la parte de accesibilidad pues presenta muchas limitantes al momento
+                    de la lectura, además en la velocidad de reacción o la falta de
+                    descripción de los elementos de la pantalla, entre otras
+                    complicaciones.
+                </p>
+                <p>
+                    Por otra parte, se han desarrollado lectores de pantalla que buscan
+                    satisfacer todas las necesidades que se presentan en el manejo de
+                    una computadora para aquellos usuarios que requieren de su uso, uno
+                    de ellos es NVDA.
+                </p>
+                <p>
+                    El NVDA es un lector de pantalla de acceso libre pues es gratuito y
+                    está al alcance de todos los usuarios desde su plataforma web, donde
+                    puede ser descargado y tiene un proceso de instalación sumamente
+                    práctico para aquellos usuarios nuevos, adicionalmente a eso, tienen
+                    una tienda para descargar comlementos los cuales son distitnas
+                    herramientas que se le pueden implementar al lector para que se
+                    ajuste a tus necesidades. Por si mismo el lector tiene mucha
+                    potencia para el manejo de los distintos programas que tiene
+                    Windows, incluyendo la paquetería de office.
+                </p>
+                <p>
+                    Una de las grandes ventajas del NVDA, es que las personas pueden
+                    usar el ratón de la computadora para desplazar el cursor por la
+                    pantalla y el lector irá leyendo los elementos que son alcanzados
+                    por el cursor, cosa que es muy importnate ya que lo usuarios con
+                    discapacidad visual no suelen usar dicho ratón ya que requiere de un
+                    control visual de en donde se está apuntando el cursor, entonces, el
+                    software ayuda a tener un apoyo más al usar el ratón en caso de que
+                    sea totalmente necesario.
+                </p>
+                <p>
+                    Otra de las ventajas es que se puede exportar a una versión
+                    portable, de tal forma que se pueda llevar en un USB a todas partes
+                    y simplemente se inserta en una computadora y se ejecuta un archivo
+                    ejecutable para poder usar dicho equipo en el momento que se
+                    necesita y una vez se termina de realizar el trabajo se desactiva y
+                    no habrá sido totalmente necesario instalarlo.
+                </p>
+                <p>
+                    El lector tiene muchas ventajas según las tareas que se realicen,
+                    pero a pesar de ello también existen tareas que pueden presentarse
+                    las cuales el lector puede que no consiga realizar, es aquí que
+                    podemos mencionar otra tecnología la cual es JAWS.
+                </p>
+                <p>
+                    El JAWS es un lector de pantalla que cumple con muchas de las
+                    características del NVDA, sin embargo, este si es necesario
+                    instalarlo en el equipo donde se requiera, por supuesto igual y
+                    tiene la capacidad de leer muchas cosas que tal vez el NVDA no.
+                    Además cuenta con distintos cursores que permiten navegar por la
+                    pantalla tratando de asemejar el comportamiento del cursor del
+                    ratón. Esto es importante para cuando existen elementos en la
+                    pantalla a los cuales no se puede llegar con el teclado, se activan
+                    los cursores y se llega hasta ese objeto en la pantalla.
+                </p>
+                <p>
+                    En las últimas versiones el JAWS se ha vuelto más pesado por tantas
+                    nuevas configuraciones que tiene, pero también llega a ser mucho más
+                    fluido que el NVDA una vez que ya está en ejecución, por supuesto
+                    entre mejor sean las características del equipo con el que se
+                    cuente, será mejor la experiencia.
+                </p>
+                <p>
+                    Para poder cargar estos programas a sus equipos de cómputo no se
+                    requieren de grandes recursos en cuanto el hardware, pero como todo
+                    software, entre más capacidad tenga el quipo el desempeño es mejor.
+                    Pueden trabajar desde equipos con 2 GB de memoria RAM, y un disco
+                    duro mecánico, con un procesador de gama baja, media o alta, pero
+                    como antes se mencionó, entre mayor sean las características del
+                    equipo, mejor será el desempeño de los lectores, pues al igual que
+                    diversos programas pueden ser muy lectos al reaccionar, dejar de
+                    leer simplemente porque se congelo el programa y es necesario
+                    reiniciarlo, entre otros factores. Lo importante es tener en cuenta
+                    que si es posible tenerlo a pesar de que el equipo de computo sea de
+                    gama baja, pero entre mejor sea, los resultados serán más
+                    favorables.
+                </p>
+                <p>
+                    El objetivo de mencionar estos lectores en particular es que han
+                    potenciado el desarrollo académico y laboral de las personas con
+                    discapacidad visual, ya que gracias a ellos, es posible acceder al
+                    estudio de una forma más parecida a lo que las personas
+                    normovisuales pueden acceder, además permite que el nivel de
+                    aprendizaje se incremente al poder desarrollar el mismo trabajo que
+                    los demás, lo mismo ocurre en el sentido laboral, pues mucho de lo
+                    que hoy en día se realiza es digital y al tener acceso a ese mundo,
+                    es posible llevar a cabo el trabajo satisfactoriamente.
+                </p>
+                <p>
+                    Es posible citar algún ejemplo, como puede ser el de un
+                    desarrollador o programador, que con los lectores de pantalla entra
+                    a un campo del conocimiento que aparentemente era imposible, pero
+                    gracias a los lectores le es posible crear 13/2 programas, páginas
+                    web, sistemas, entre un sinfín de cosas que finalmente le habrirásn
+                    las puertas para un empleo, rompiendo así una barrera más en el
+                    mundo en general. Teniendo la capacidad de realizar mucho del
+                    trabajo que se emplea en las grandes empresas y que tiene
+                    importancia en el mercado laboral.
+                </p>
+
+                <p>
+                    Existen distintas herramientas que se adaptan a las diferentes
+                    tecnologías, como los teléfonos, relojes, tabletas o televisiones, y
+                    estos también cuentan en su gran mayoría con lectores de pantalla de
+                    apoyo para que las personas puedan manejarlos.
+                </p>
+                <p>
+                    Realmente es de ajustar cada una de las tecnologías al entorno que
+                    la persona requiere y buscar dar soluciones a las distintas
+                    limitantes que permitan la integración poco a poco de las personas
+                    al nuevo mundo que hoy en día es parte de la vida de los seres
+                    humanos.
+                </p>
+                <p>
+                    El manejo de ordenadores resulta extremadamente complicado para las
+                    personas con ceguera parcial o completa. No obstante, gracias al
+                    desarrollo técnico de los últimos años estas personas también han
+                    empezado a utilizar el ordenador en su día a día sin grandes
+                    problemas. Con los screen readers, los textos escritos se emiten en
+                    forma de voz artificial (text to speech, de texto a voz en español)
+                    o como líneas braille táctiles, cumpliendo así con el objetivo de
+                    que las personas invidentes también puedan utilizar el ordenador.
+                    Así, esta tecnología permite que, además del PC, estas personas
+                    puedan manejar también otros dispositivos, como los smartphones, por
+                    medio de aplicaciones de lectores de pantalla.
+                </p>
+                <p>
+                    Puede distinguirse entre programas lectores de pantalla externos y
+                    aplicaciones del lado del sistema, los cuales se diferencian entre
+                    sí notablemente en términos de calidad, tamaño y costes. Así,
+                    existen desde aplicaciones gratuitas hasta software cuyo precio
+                    incluso alcanza las cuatro cifras, y es que algunas de estas
+                    herramientas utilizan programas de informática computacional cuyos
+                    costes de desarrollo deben recuperarse.
+                </p>
+                <p>
+                    La calidad de la emisión de voz depende del idioma en particular.
+                    Así, los lectores de pantalla para ciegos en inglés suelen mostrar
+                    generalmente mejores resultados que los programas en español, pues
+                    el desarrollo de la mayoría de sintetizadores de voz se basan en la
+                    lengua inglesa.
+                </p>
+                <p>
+                    El desarrollo de la voz sintética es una de las tareas principales
+                    de la lingüística computacional y, aunque su desarrollo va
+                    avanzando, la lengua sintética sigue diferenciándose
+                    considerablemente de la humana. Es por ello que hasta ahora los
+                    usuarios del software de screen readers tengan que conformarse en
+                    muchos casos con una emisión de voz artificial que recuerda a un
+                    robot. Dado que no todos los usuarios pueden estar dispuestos a
+                    trabajar con una salida de voz pobre, la calidad de los screen
+                    readers y de los sintetizadores incorporados es extremadamente
+                    importante.
+                </p>
+
+                <h2>
+                    Vista del espacio de trabajo para invidentes: control, screen
+                    reader, salida de audio y resultados en braille
+                </h2>
+                <p>
+                    Los usuarios invidentes manejan el ordenador mediante comandos de
+                    teclado o controles de voz y el software de screen reader traduce el
+                    texto al medio deseado
+                </p>
+                <p>
+                    A la hora de elegir un lector de pantalla es asimismo importante que
+                    este sea compatible con los dispositivos utilizados en el lugar de
+                    trabajo. Si, por ejemplo, se utiliza una línea braille, debe ser
+                    compatible con el screen reader, lo que además se aplica al sistema
+                    operativo del ordenador y al software relacionado. En dicha
+                    selección también son relevantes las respuestas a las siguientes
+                    preguntas: ¿el usuario solo necesita elementos de ayuda para leer o
+                    también para escribir en el lugar de trabajo?, ¿con qué contenidos
+                    trabaja?, ¿cuál es el presupuesto para organizar el lugar de trabajo
+                    para invidentes?
+                </p>
+                <p>
+                    Para algunos ámbitos de aplicación se necesita un software complejo
+                    y caro, mientras que en otros casos basta con recurrir a
+                    herramientas gratuitas. Esto depende del espectro de tareas del
+                    usuario, es decir, ¿solo tiene que leer documentos o también
+                    realizar búsquedas en Internet?, ¿cómo se maneja con los medios de
+                    ayuda existentes en su puesto de trabajo?, ¿cómo funciona la
+                    colaboración con los compañeros? En cualquier caso es crucial
+                    realizar un análisis exhaustivo del lugar de trabajo, aunque las
+                    funciones y el campo de aplicación de los lectores de pantalla para
+                    ciegos también son significativos para los usuarios privados.
+                </p>
+                <p>
+                    Antes de adquirir un lector de pantalla, comprueba si existen
+                    subvenciones por parte de la Seguridad Social o el Estado, dado que
+                    el número de herramientas gratuitas ha disminuido
+                </p>
+
+                <h3>
+                    Funciones de los lectores de pantalla y de los sintetizadores de voz
+                </h3>
+                <p>
+                    Los screen readers leen los elementos textuales visualizados y
+                    convierten los datos en una emisión de voz sintética o envían las
+                    correspondientes señales para su traducción a un dispositivo
+                    braille, que emite el texto correspondiente en formato táctil
+                </p>
+                <p>
+                    En la emisión de voz artificial los tonos se generan con ayuda de
+                    sintetizadores, como, por ejemplo, Elo o eSpeak. Estas aplicaciones
+                    recurren a diccionarios integrados en los que también aparece la
+                    pronunciación de la mayoría de palabras, pero raramente puede
+                    crearse un lenguaje que suene natural de esta manera. Hay que tener
+                    en cuenta que la entonación de una misma palabra puede variar en
+                    función de su significado dentro de un contexto o de su posición
+                    sintáctica.
+                </p>
+                <p>
+                    En este sentido, también pueden surgir problemas en torno a la
+                    entonación de las preguntas, pues las subidas y bajadas tonales
+                    influyen en la interpretación. Por ejemplo, “es la hora” o “¿es la
+                    hora?” son dos oraciones distintas, cuya diferencia de significado
+                    en la lengua hablada se pone de manifiesto mediante la entonación.
+                    Para que el sintetizador de voz pueda reproducir correctamente la
+                    segunda frase, esta debe incluir al final de una subida de voz, pues
+                    de lo contrario el usuario la interpretará de forma errónea como una
+                    afirmación.
+                </p>
+                <p>
+                    En la síntesis de voz son especialmente relevantes las siguientes
+                    características cualitativas:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Acentuación de palabras</strong> : El sintetizador no solo
+                        tiene que pronunciar correctamente palabras aisladas, sino también
+                        adaptar la acentuación a su posición en la frase.
+                    </li>
+                    <li>
+                        <strong>Transición de las sílabas</strong>: Si el sintetizador
+                        compone la lengua a partir de sílabas, las transiciones deben
+                        diseñarse con fluidez para crear palabras comprensibles.
+                    </li>
+                    <li>
+                        <strong>Entonación de la frase</strong>: Si las subidas y bajadas
+                        de tono son relevantes para el significado de la frase (algo que
+                        se marca con la puntuación en la lengua escrita), el sintetizador
+                        debe ser capaz de reproducirlo
+                    </li>
+                    <li>
+                        <strong>Velocidad del habla</strong>: El sintetizador debe
+                        intentar imitar el ritmo natural de la lengua para que el usuario
+                        obtenga una impresión auditiva natural.
+                    </li>
+                    <li>
+                        <strong>Velocidad de lectura</strong>: La velocidad de lectura
+                        también es importante para el usuario. En el mejor de los casos,
+                        la establece él mismo.
+                    </li>
+                    <li>
+                        <strong>Pausas</strong>: Los elementos de formato como párrafos y
+                        saltos de línea deben marcarse como pausas en la conversación para
+                        que sea fácil registrar el principio y el final de cada fragmento.
+                    </li>
+                </ul>
+                <p>
+                    La investigación en lingüística computacional ha hecho muchos
+                    avances en los últimos años. <br />
+                    El sistema Tacotron 2 de Google ofrece resultados muy parecidos a la
+                    calidad del habla humana. Los desarrollos más recientes se han
+                    podido llevar a cabo gracias a la capacidad autónoma de aprendizaje
+                    de los sintetizadores modernos. En términos generales, el programa
+                    aprende el lenguaje humano como un niño pequeño y “compone” la
+                    lengua a partir de documentos lingüísticos. <br />
+                    Llama sobre todo la atención que Tacotron 2 sea relativamente
+                    resistente a los errores ortográficos y sepa hacer frente a la
+                    puntuación y a la acentuación de las frases (por ejemplo, con la
+                    tecla Mayús). No obstante, la síntesis del habla carece de
+                    emocionalidad y Tacotron 2 también tiene dificultades con las
+                    palabras extranjeras.
+                </p>
+                <p>
+                    Todavía queda por ver cuándo este sintetizador y productos similares
+                    de la competencia estarán disponibles para un público más amplio y
+                    si podrán utilizarse en español. Mientras tanto, los lectores de
+                    pantalla para ciegos y personas con visibilidad reducida siguen
+                    empleando los sintetizadores de voz habituales que todavía siguen
+                    sonando como máquinas.
+                </p>
+
+                <section class="not-format">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">
+                            Comentarios
+                        </h2>
+                    </div>
+                    <form class="mb-6">
+                        <div
+                            class="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                            <label for="comment" class="sr-only">Comentarios</label>
+                            <textarea id="comment" rows="6"
+                                class="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
+                                placeholder="Comentario..." required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+                            Ingresar comentario
+                        </button>
+                    </form>
+
+                    <section></section>
+                    <!-- <article class="p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900">
+                        <footer class="flex justify-between items-center mb-2">
+                            <div class="flex items-center">
+                                <p
+                                    class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
+                                    <img class="mr-2 w-6 h-6 rounded-full"
+                                        src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                                        alt="Michael Gough" />Michael Gough
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    <time pubdate datetime="2022-02-08" title="February 8th, 2022">Feb. 8, 2022</time>
+                                </p>
+                            </div>
+                            <button id="dropdownComment1Button" data-dropdown-toggle="dropdownComment1"
+                                class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                type="button">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 16 3">
+                                    <path
+                                        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                </svg>
+                                <span class="sr-only">Comment settings</span>
+                            </button>
+
+                            <div id="dropdownComment1"
+                                class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownMenuIconHorizontalButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Remove</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                        <p>
+                            Very straight-to-point article. Really worth time reading. Thank
+                            you! But tools are just the instruments for the UX designers.
+                            The knowledge of the design tools are as important as the
+                            creation of the design strategy.
+                        </p>
+                        <div class="flex items-center mt-4 space-x-4">
+                            <button type="button"
+                                class="flex items-center font-medium text-sm text-gray-500 hover:underline dark:text-gray-400">
+                                <svg class="mr-1.5 w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 18">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2v4a1 1 0 0 0 1.707.707L10.414 13H18a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5 4h2a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2ZM5 4h5a1 1 0 1 1 0 2H5a1 1 0 0 1 0-2Zm2 5H5a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Zm9 0h-6a1 1 0 0 1 0-2h6a1 1 0 1 1 0 2Z" />
+                                </svg>
+                                Reply
+                            </button>
+                        </div>
+                    </article> -->
+                    <!-- <article class="p-6 mb-6 ml-6 lg:ml-12 text-base bg-white rounded-lg dark:bg-gray-900">
+                        <footer class="flex justify-between items-center mb-2">
+                            <div class="flex items-center">
+                                <p
+                                    class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
+                                    <img class="mr-2 w-6 h-6 rounded-full"
+                                        src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                        alt="Jese Leos" />Jese Leos
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    <time pubdate datetime="2022-02-12" title="February 12th, 2022">Feb. 12, 2022</time>
+                                </p>
+                            </div>
+                            <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2"
+                                class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                type="button">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 16 3">
+                                    <path
+                                        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                </svg>
+                                <span class="sr-only">Comment settings</span>
+                            </button>
+
+                            <div id="dropdownComment2"
+                                class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownMenuIconHorizontalButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Remove</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                        <p>Much appreciated! Glad you liked it ☺️</p>
+                        <div class="flex items-center mt-4 space-x-4">
+                            <button type="button"
+                                class="flex items-center font-medium text-sm text-gray-500 hover:underline dark:text-gray-400">
+                                <svg class="mr-1.5 w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 18">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2v4a1 1 0 0 0 1.707.707L10.414 13H18a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5 4h2a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2ZM5 4h5a1 1 0 1 1 0 2H5a1 1 0 0 1 0-2Zm2 5H5a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Zm9 0h-6a1 1 0 0 1 0-2h6a1 1 0 1 1 0 2Z" />
+                                </svg>
+                                Reply
+                            </button>
+                        </div>
+                    </article> -->
+                    <!-- <article
+                        class="p-6 mb-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                        <footer class="flex justify-between items-center mb-2">
+                            <div class="flex items-center">
+                                <p
+                                    class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
+                                    <img class="mr-2 w-6 h-6 rounded-full"
+                                        src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+                                        alt="Bonnie Green" />Bonnie Green
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    <time pubdate datetime="2022-03-12" title="March 12th, 2022">Mar. 12, 2022</time>
+                                </p>
+                            </div>
+                            <button id="dropdownComment3Button" data-dropdown-toggle="dropdownComment3"
+                                class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                type="button">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 16 3">
+                                    <path
+                                        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                </svg>
+                                <span class="sr-only">Comment settings</span>
+                            </button>
+
+                            <div id="dropdownComment3"
+                                class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownMenuIconHorizontalButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Remove</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                        <p>
+                            The article covers the essentials, challenges, myths and stages
+                            the UX designer should consider while creating the design
+                            strategy.
+                        </p>
+                        <div class="flex items-center mt-4 space-x-4">
+                            <button type="button"
+                                class="flex items-center font-medium text-sm text-gray-500 hover:underline dark:text-gray-400">
+                                <svg class="mr-1.5 w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 18">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2v4a1 1 0 0 0 1.707.707L10.414 13H18a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5 4h2a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2ZM5 4h5a1 1 0 1 1 0 2H5a1 1 0 0 1 0-2Zm2 5H5a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Zm9 0h-6a1 1 0 0 1 0-2h6a1 1 0 1 1 0 2Z" />
+                                </svg>
+                                Reply
+                            </button>
+                        </div>
+                    </article> -->
+                    <!-- <article
+                        class="p-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                        <footer class="flex justify-between items-center mb-2">
+                            <div class="flex items-center">
+                                <p
+                                    class="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
+                                    <img class="mr-2 w-6 h-6 rounded-full"
+                                        src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
+                                        alt="Helene Engels" />Helene Engels
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    <time pubdate datetime="2022-06-23" title="June 23rd, 2022">Jun. 23, 2022</time>
+                                </p>
+                            </div>
+                            <button id="dropdownComment4Button" data-dropdown-toggle="dropdownComment4"
+                                class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                type="button">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 16 3">
+                                    <path
+                                        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                                </svg>
+                            </button>
+
+                            <div id="dropdownComment4"
+                                class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownMenuIconHorizontalButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Remove</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                        <p>
+                            Thanks for sharing this. I do came from the Backend development
+                            and explored some of the tools to design my Side Projects.
+                        </p>
+                        <div class="flex items-center mt-4 space-x-4">
+                            <button type="button"
+                                class="flex items-center font-medium text-sm text-gray-500 hover:underline dark:text-gray-400">
+                                <svg class="mr-1.5 w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 18">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2v4a1 1 0 0 0 1.707.707L10.414 13H18a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5 4h2a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2ZM5 4h5a1 1 0 1 1 0 2H5a1 1 0 0 1 0-2Zm2 5H5a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Zm9 0h-6a1 1 0 0 1 0-2h6a1 1 0 1 1 0 2Z" />
+                                </svg>
+                                Reply
+                            </button>
+                        </div>
+                    </article> -->
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <aside aria-label="Related articles" class="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
+        <section class="px-4 mx-auto max-w-screen-xl">
+            <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
+                Artículos relacionados
+            </h2>
+            <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="max-w-xs">
+                    <header>
+                        <a href="article1.html">
+                            <img src="src/img/dos-was-ist-ein-disk-operating-system.jpg"
+                                class="mb-5 rounded-lg" alt="Image 1" />
+                        </a>
+                        <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                            <a href="/article1.html">Otros campos de aplicación de los lectores de pantalla</a>
+                        </h2>
+                    </header>
+                    <p class="mb-4 text-gray-500 dark:text-gray-400">
+                        Al viajar en coche: los lectores de pantalla pueden leer textos en voz alta, ya sean artículos
+                        científicos, noticias o guías,
+                        mientras se conduce
+                    </p>
+                    <a href="article1.html"
+                        class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                        Leer en 2 minutos
+                    </a>
+                </article>
+                <article class="max-w-xs">
+                    <a href="article2.html">
+                        <img src="src/img/6418c96b06d6c5d9c0fa78e7_acesibilidad-digital_1cf33902fd5d65afe0ae836b6e08cea1_800.png"
+                            class="mb-5 rounded-lg" alt="Image 2" />
+                    </a>
+                    <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                        <a href="article2.html">El problema de la accesibilidad en Internet</a>
+                    </h2>
+                    <p class="mb-4 text-gray-500 dark:text-gray-400">
+                        Para las personas en sillas de ruedas es importante actualmente que los edificios estén lo mejor acondicionados posible, ya sea con rampas o con ascensores. 
+                    </p>
+                    <a href="article2.html"
+                        class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                        Leer el 12 minutos
+                    </a>
+                </article>
+                <article class="max-w-xs">
+                    <a href="article3.html">
+                        <img src="src/img/1 cYOB76MZe6DNDBlwNrsUvQ.webp"
+                            class="mb-5 rounded-lg" alt="Image 3" />
+                    </a>
+                    <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                        <a href="article3.html">Lectura con screen readers: problemas más habituales </a>
+                    </h2>
+                    <p class="mb-4 text-gray-500 dark:text-gray-400">
+                        Si las páginas web presentan barreras, los lectores de pantalla para ciegos no pueden trabajar de manera eficiente, por lo que solo ofrecen resultados incoherentes que incluso los usuarios de los screen readers más experimentados a duras penas entienden. 
+                    </p>
+                    <a href="article3.html"
+                        class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                        Leer en 8 minutos
+                    </a>
+                </article>
+
+            </div>
+        </section>
+    </aside>
+
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <article class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md sm:text-center">
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                    ¿Quieres contar tu experiencia?
+                </h2>
+                <p class="mx-auto mb-8 max-w-2xl text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+                    Contacte con nosotros
+                </p>
+                <form action="#">
+                    <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                        <div class="relative w-full">
+                            <label for="email"
+                                class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ingresa tu
+                                correo</label>
+                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                    <path
+                                        d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                                    <path
+                                        d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                                </svg>
+                            </div>
+                            <input
+                                class="block p-3 pl-9 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Enter your email" type="email" id="email" required="" />
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                Contactar
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div
+                        class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
+                        We care about the protection of your data.
+                        <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our
+                            Privacy Policy</a>.
+                    </div> -->
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <footer
+        class="bg-white rounded-lg shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased">
+        <p class="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
+            &copy; 2019-2022
+            <a href="https://flowbite.com/" class="hover:underline" target="_blank">Inclusión Visual.com</a>. Todos los
+            derechos reservados
+        </p>
+        <!-- <div class="flex justify-center items-center space-x-1">
+            <a href="#" data-tooltip-target="tooltip-facebook"
+                class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 8 19">
+                    <path fill-rule="evenodd"
+                        d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <div id="tooltip-facebook" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Like us on Facebook
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <a href="#" data-tooltip-target="tooltip-twitter"
+                class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                        d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z" />
+                </svg>
+                <span class="sr-only">Twitter</span>
+            </a>
+            <div id="tooltip-twitter" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Follow us on Twitter
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <a href="#" data-tooltip-target="tooltip-github"
+                class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Github</span>
+            </a>
+            <div id="tooltip-github" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Star us on GitHub
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <a href="#" data-tooltip-target="tooltip-dribbble"
+                class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Dribbble</span>
+            </a>
+            <div id="tooltip-dribbble" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Follow us on Dribbble
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div> -->
+    </footer>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
