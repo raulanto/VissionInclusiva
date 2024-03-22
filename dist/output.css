@@ -2057,6 +2057,26 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[2\] {
+  height: 2;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
